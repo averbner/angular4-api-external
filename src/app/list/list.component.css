@@ -1,0 +1,12 @@
+.listado li{
+    list-style-type: none;
+}
+
+.informacion{
+    margin-bottom: 30px;
+    border-bottom: 3px solid grey; 
+}
+
+.tools{
+    background-color: #e0e0e0;
+}

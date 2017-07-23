@@ -1,0 +1,22 @@
+<div *ngIf="isLoading; else elseBlock">
+  <div>
+    <app-loader></app-loader>
+  </div>   
+</div>
+
+<ng-template #elseBlock>
+  <div class="listado">
+    <ul>
+      <div *ngFor="let listado of projects" class="informacion">
+        <li>{{listado.id}}</li>
+        <li>{{listado.title}}</li>
+        <li>{{listado.body}}</li>
+        <li class="tools">
+          <a (click)="onDelete(listado)">
+            <i class="fa fa-2x fa-trash"></i>
+          </a>
+        </li>
+      </div>
+    </ul>
+  </div>
+</ng-template>
